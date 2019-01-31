@@ -12,3 +12,9 @@ post = Post.create(potin_id: Potin.all.sample, tag: Tag.all.sample)
 end
 
 
+
+10.times do |index|
+pm=PrivateMessage.create(content: Faker::Shakespeare.hamlet_quote, recipient: User.first, sender: User.last)
+end
+
+
